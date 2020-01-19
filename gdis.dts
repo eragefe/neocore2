@@ -36,7 +36,7 @@
                 simple-audio-card,frame-inversion;
 				simple-audio-card,bitclock-master = <&codec_dai>;
 				simple-audio-card,frame-master = <&codec_dai>;
-		          status = "okay";
+		        status = "okay";
 
 				cpu_dai: simple-audio-card,cpu {
 				sound-dai = <&i2s0>;
