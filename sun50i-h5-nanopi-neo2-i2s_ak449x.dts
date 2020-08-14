@@ -787,7 +787,7 @@
 				compatible = "asahi-kasei,ak449x";
 				reg = <0x11>;
 				status = "okay";
-                                digifil = "Super Slow Roll-Off Filter(NOS)";
+				digifil = "Super Slow Roll-Off Filter(NOS)";
 				chip = "AK4495";
 				chmode = "STEREO";
 				reset-gpios = <0x10 0x6 0x7 0x1>;
