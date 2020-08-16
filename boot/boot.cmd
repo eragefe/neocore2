@@ -5,16 +5,12 @@
 echo "running boot.scr"
 setenv load_addr 0x44000000
 setenv fix_addr 0x44500000
+
 fatload mmc 0 ${load_addr} uEnv.txt
 env import -t ${load_addr} ${filesize}
 
 fatload mmc 0 ${kernel_addr} ${kernel}
-
-if test $board = nanopi-neo2-v1.1; then 
-    fatload mmc 0 ${dtb_addr} sun50i-h5-nanopi-neo2.dtb
-else
-    fatload mmc 0 ${dtb_addr} sun50i-h5-${board}.dtb
-fi
+fatload mmc 0 ${dtb_addr} sun50i-h5-nanopi-neo2.dtb
 fdt addr ${dtb_addr}
 
 # setup boot_device
