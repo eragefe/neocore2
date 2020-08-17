@@ -1,7 +1,7 @@
 #################################################################
 # General options
 #################################################################
-ramdisk=rootfs.cpio.gz
+
 kernel=Image
 dtb=sun50i-h5-nanopi-neo2.dtb
 kernel_addr=0x46000000
