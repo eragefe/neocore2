@@ -3,9 +3,7 @@
 #################################################################
 ramdisk=rootfs.cpio.gz
 kernel=Image
-fix_addr 0x44500000
 kernel_addr=0x46000000
-ramdisk_addr=0x47000000
 dtb_addr=0x48000000
 
 debug_port=ttyS0,115200
