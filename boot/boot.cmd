@@ -4,7 +4,6 @@
 
 echo "running boot.scr"
 setenv load_addr 0x44000000
-setenv fix_addr 0x44500000
 
 fatload mmc 0 ${load_addr} uEnv.txt
 env import -t ${load_addr} ${filesize}
