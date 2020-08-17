@@ -9,7 +9,7 @@ fatload mmc 0 ${load_addr} uEnv.txt
 env import -t ${load_addr} ${filesize}
 
 fatload mmc 0 ${kernel_addr} ${kernel}
-fatload mmc 0 ${dtb_addr} sun50i-h5-nanopi-neo2.dtb
+fatload mmc 0 ${dtb_addr} ${dtb}
 fdt addr ${dtb_addr}
 
 # setup boot_device
