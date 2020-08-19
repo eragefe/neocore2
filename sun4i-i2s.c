@@ -1090,12 +1090,12 @@ static void sun4i_i2s_stop_playback(struct sun4i_i2s *i2s)
 	/* Disable TX Block */
 	regmap_update_bits(i2s->regmap, SUN4I_I2S_CTRL_REG,
 			   SUN4I_I2S_CTRL_TX_EN,
-			   0);
+			   SUN4I_I2S_CTRL_TX_EN);
 
 	/* Disable TX DRQ */
 	regmap_update_bits(i2s->regmap, SUN4I_I2S_DMA_INT_CTRL_REG,
 			   SUN4I_I2S_DMA_INT_CTRL_TX_DRQ_EN,
-			   0);
+			   SUN4I_I2S_DMA_INT_CTRL_TX_DRQ_EN);
 }
 
 static int sun4i_i2s_trigger(struct snd_pcm_substream *substream, int cmd,
