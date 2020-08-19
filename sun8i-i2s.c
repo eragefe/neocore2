@@ -1098,8 +1098,6 @@ static int sun8i_card_create(struct device *dev, struct priv *priv)
 	dai_link->dai_fmt = snd_sun8i_dac_dai.dai_fmt;
 	dai_link->ops = snd_sun8i_dac_dai.ops;
 	dai_link->init = snd_sun8i_dac_dai.init; 
-	dai_link->cpu_of_node = dev->of_node;
-	dai_link->platform_of_node = dev->of_node;
 
 	dai_link->codecs = codecs;
 	dai_link->num_codecs = num_codecs;
